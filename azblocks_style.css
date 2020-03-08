@@ -12,6 +12,7 @@ body {
     width: 100%;
     background-color: rgb(226, 226, 226);
     height: 40px;
+    user-select: none;
 }
 
 #logo {
@@ -42,23 +43,14 @@ body {
     background-color: rgb(120, 120, 120);
 }
 
-#editSection {
+/*#editSection {
     height: 50%;
     width: 100%;
     display: block;
     margin: 0;
 }
 
-#main {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 40px);
-    bottom: 0;
-    overflow: hidden;
-}
-
-/*.sector {
+.sector {
     height: 100%;
     display: inline-block;
 }
@@ -115,3 +107,51 @@ body {
 #templateExtension {
     display: none;
 }*/
+
+#blocklyArea {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px);
+    bottom: 0;
+    overflow: hidden;
+}
+#blocklyDiv {
+    position: absolute;
+}
+
+#langSelect {
+    border-radius: 5px;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 30px;
+}
+
+#login, #signup {
+    float: right;
+}
+
+#userContent {
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+#username {
+    color: #444;
+    font-size: 17px;
+    display: block;
+    margin-left: 5px;
+    float: right;
+}
+#avatar {
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    pointer-events: none;
+}
